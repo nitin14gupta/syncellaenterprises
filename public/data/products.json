@@ -1,0 +1,70 @@
+{
+    "products": [
+        {
+            "id": "sensortrack-pro",
+            "name": "SensorTrack Pro",
+            "shortDescription": "Real-time sensor monitoring system with advanced analytics and AI-driven insights for industrial applications.",
+            "longDescription": "SensorTrack Pro is our flagship product, designed for industrial environments where real-time monitoring is critical. It combines state-of-the-art sensors with powerful analytics to provide actionable insights and predictive maintenance capabilities. The system can handle thousands of data points per second, with microsecond response times and robust failover mechanisms.",
+            "features": [
+                "Real-time data processing with <1ms latency",
+                "AI-powered predictive maintenance",
+                "Seamless integration with existing systems",
+                "Advanced visualization dashboard",
+                "Customizable alerts and notifications",
+                "Secure data encryption and storage"
+            ],
+            "image": "/images/product-1.jpg",
+            "category": "Industrial",
+            "tags": [
+                "real-time",
+                "monitoring",
+                "analytics",
+                "industrial"
+            ]
+        },
+        {
+            "id": "datasense-hub",
+            "name": "DataSense Hub",
+            "shortDescription": "Centralized data management platform for IoT devices with seamless integration capabilities.",
+            "longDescription": "DataSense Hub serves as a central nervous system for your IoT ecosystem, collecting, processing, and analyzing data from multiple sources. Its flexible architecture allows for easy integration with third-party systems and provides a unified interface for monitoring and management. With advanced security features and scalable infrastructure, it's ideal for businesses of all sizes.",
+            "features": [
+                "Supports over 200 sensor types and protocols",
+                "Edge computing capabilities",
+                "Cloud and on-premise deployment options",
+                "Real-time data visualization",
+                "Automated reporting and insights",
+                "Role-based access control"
+            ],
+            "image": "/images/product-2.jpg",
+            "category": "IoT",
+            "tags": [
+                "IoT",
+                "data management",
+                "integration",
+                "cloud"
+            ]
+        },
+        {
+            "id": "precisionsensor-x1",
+            "name": "PrecisionSensor X1",
+            "shortDescription": "High-precision environmental monitoring solution with extended battery life and wireless connectivity.",
+            "longDescription": "PrecisionSensor X1 is designed for environments where accuracy and reliability are paramount. With industry-leading precision and long-term stability, it provides consistent, trustworthy data for critical applications. Its extended battery life and robust wireless connectivity make it ideal for remote deployments where power and connectivity are limited.",
+            "features": [
+                "Industry-leading sensor accuracy (±0.1%)",
+                "10-year battery life",
+                "Mesh network capability",
+                "IP68 waterproof rating",
+                "Operating temperature range: -40°C to +85°C",
+                "Wireless range up to 15km"
+            ],
+            "image": "/images/product-3.jpg",
+            "category": "Environmental",
+            "tags": [
+                "precision",
+                "environmental",
+                "battery",
+                "wireless"
+            ]
+        }
+    ]
+}
