@@ -53,6 +53,18 @@ export const metadata: Metadata = {
     description:
       "Syncella Enterprise is a product-based company from India, creating innovative solutions like Jilzo and Safarsaathi.",
   },
+  metadataBase: new URL("https://syncella.com"),
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
+  manifest: "/manifest.json",
 };
 
 export default function RootLayout({

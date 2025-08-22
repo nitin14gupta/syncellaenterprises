@@ -1,7 +1,30 @@
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Jilzo by Syncella | Social Micro-Content App",
   description:
     "Jilzo by Syncella is a modern social micro-content and house-party inspired app designed for quick, fun interactions with friends.",
+  keywords: [
+    "Jilzo",
+    "Jilzo app",
+    "house party app India",
+    "social micro content",
+    "Syncella Jilzo",
+  ],
+  alternates: { canonical: "/products/jilzo" },
+  openGraph: {
+    title: "Jilzo by Syncella | Social Micro-Content App",
+    description:
+      "Jilzo by Syncella is a modern social micro-content and house-party inspired app designed for quick, fun interactions with friends.",
+    url: "https://syncella.com/products/jilzo",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jilzo by Syncella | Social Micro-Content App",
+    description:
+      "Jilzo by Syncella is a modern social micro-content and house-party inspired app.",
+  },
 };
 
 import ProductDetail from "@/components/ProductDetail";
