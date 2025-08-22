@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 type Props = {
   title: string;
@@ -27,7 +28,7 @@ export default function ProductDetail({ title, paragraphs, imageUrl, imageAlt }:
         </motion.div>
       </div>
       <div className="mt-10">
-        <a href="/" className="text-blue-600 hover:underline">Back to Syncella</a>
+        <Link href="/" className="text-blue-600 hover:underline">Back to Syncella</Link>
       </div>
     </main>
   );

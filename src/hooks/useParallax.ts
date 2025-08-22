@@ -25,14 +25,14 @@ export function useParallax<T extends HTMLElement = HTMLElement>({
     const el = ref.current;
     if (!el) return;
 
-    const yMove = (index: number, target: Element) => `+=${(1 - speed) * 60}`;
+    const yMove = () => `+=${(1 - speed) * 60}`;
 
     const ctx = gsap.context(() => {
       gsap.fromTo(
         el,
         { y: 0 },
         {
-          y: yMove as any,
+          y: yMove,
           ease: "none",
           scrollTrigger: {
             trigger: el,
