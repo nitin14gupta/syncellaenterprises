@@ -115,7 +115,7 @@ export default function Home() {
         <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Products</h2>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <ProductCard
-            href="/products/jilzo"
+            href="https://www.jilzo.com/"
             title="Jilzo"
             description="A social micro-content and house-party inspired app designed for quick, fun interactions with friends."
             imageUrl="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
@@ -129,7 +129,7 @@ export default function Home() {
             description="A travel safety companion app for India, providing smart tips, alerts, and sharing options for safer journeys."
             imageUrl="https://images.unsplash.com/photo-1488646953014-85cb44e25828"
             imageAlt="Traveler with backpack at sunset"
-            gradientFrom="from-emerald-50 dark:from-emerald-900/20"
+            gradientFrom="to-emerald-100 dark:to-emerald-700/10"
             gradientTo="to-emerald-100 dark:to-emerald-700/10"
           />
           <ProductCard
