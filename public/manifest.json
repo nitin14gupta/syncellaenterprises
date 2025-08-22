@@ -1,0 +1,17 @@
+{
+  "name": "Syncella Enterprise",
+  "short_name": "Syncella",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111827",
+  "theme_color": "#2563EB",
+  "description": "Syncella Enterprise is a product-based company from India, creating innovative solutions like Jilzo and Safarsaathi.",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
+

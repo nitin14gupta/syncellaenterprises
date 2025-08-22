@@ -4,18 +4,33 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #111827;
+  --primary: #111827; /* Dark Navy / Blackish Gray */
+  --secondary: #F9FAFB; /* Off White */
+  --accent: #2563EB; /* Blue */
+  --accent2: #10B981; /* Green */
+  --bg-start: #ffffff;
+  --bg-end: #f5f7fb;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0b1220;
+    --foreground: #e5e7eb;
+    --bg-start: #0b1220;
+    --bg-end: #111827;
   }
 }
 
+html { scroll-behavior: smooth; }
+
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, var(--bg-start) 0%, var(--bg-end) 100%);
+  font-family: var(--font-inter), system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
