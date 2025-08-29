@@ -1,8 +1,6 @@
 "use client";
 import React, { Suspense } from "react";
-// @ts-ignore
 import { Canvas } from "@react-three/fiber";
-// @ts-ignore
 import { OrbitControls, Stars } from "@react-three/drei";
 
 export default function FinalScene() {

@@ -14,7 +14,7 @@ function FloatingIsland({ position = [0,0,0], color = "#00BFFF" }: { position?: 
     }
   });
   return (
-    <group ref={ref as any} position={position as any}>
+    <group ref={ref} position={position as unknown as [number,number,number]}>
       <mesh castShadow receiveShadow>
         <dodecahedronGeometry args={[1.1, 0]} />
         <meshStandardMaterial color={color} metalness={0.85} roughness={0.25} />
@@ -31,7 +31,7 @@ function LightBridge({ a = [-2.8,0,0], b = [0,0,0] }: { a?: [number,number,numbe
   const mid = useMemo(() => [(a[0]+b[0])/2, (a[1]+b[1])/2 - 0.8, (a[2]+b[2])/2], [a,b]);
   return (
     <group>
-      <mesh position={mid as any} rotation={[Math.PI/2,0,0]}>
+      <mesh position={mid as unknown as [number,number,number]} rotation={[Math.PI/2,0,0]}>
         <torusGeometry args={[1.6, 0.02, 8, 80]} />
         <meshStandardMaterial color="#00FFFF" emissive="#00FFFF" emissiveIntensity={0.6} transparent opacity={0.7} />
       </mesh>

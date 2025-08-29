@@ -1,18 +1,17 @@
 "use client";
 import React, { Suspense, useRef } from "react";
-// @ts-ignore
+import type { Group } from "three";
 import { Canvas, useFrame } from "@react-three/fiber";
-// @ts-ignore
 import { OrbitControls } from "@react-three/drei";
 
 function Planet({ color = "#00BFFF", position = [0,0,0], ring = false }: { color?: string; position?: [number,number,number]; ring?: boolean }) {
-  const ref = useRef<any>(null);
+  const ref = useRef<Group | null>(null);
   useFrame(({ clock }) => {
     if (ref.current) ref.current.rotation.y = clock.getElapsedTime() * 0.2;
   });
   return (
-    <group position={position as any}>
-      <mesh ref={ref}>
+    <group position={position as unknown as [number,number,number]}>
+      <mesh ref={ref as unknown as React.MutableRefObject<Group>}>
         <sphereGeometry args={[1.1, 48, 48]} />
         <meshStandardMaterial color={color} metalness={0.9} roughness={0.2} />
       </mesh>

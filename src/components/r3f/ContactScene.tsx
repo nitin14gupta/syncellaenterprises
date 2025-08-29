@@ -1,19 +1,18 @@
 "use client";
 import React, { Suspense, useRef } from "react";
-// @ts-expect-error
+import type { MeshStandardMaterial } from "three";
 import { Canvas, useFrame } from "@react-three/fiber";
-// @ts-expect-error
 import { OrbitControls } from "@react-three/drei";
 
 function ConsolePanel() {
-  const ref = useRef<any>(null);
+  const ref = useRef<MeshStandardMaterial | null>(null);
   useFrame(({ clock }) => {
-    if (ref.current) ref.current.material.emissiveIntensity = 0.3 + Math.sin(clock.getElapsedTime()*3)*0.2;
+    if (ref.current) ref.current.emissiveIntensity = 0.3 + Math.sin(clock.getElapsedTime()*3)*0.2;
   });
   return (
     <mesh rotation={[0.3, 0.2, 0.1]}>
       <boxGeometry args={[3.2, 1.6, 0.2]} />
-      <meshStandardMaterial ref={ref as any} color="#00FF41" metalness={0.9} roughness={0.15} emissive="#00ff41" emissiveIntensity={0.35} />
+      <meshStandardMaterial ref={ref} color="#00FF41" metalness={0.9} roughness={0.15} emissive="#00ff41" emissiveIntensity={0.35} />
     </mesh>
   );
 }

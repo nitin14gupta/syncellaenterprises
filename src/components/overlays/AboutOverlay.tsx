@@ -5,7 +5,7 @@ export default function AboutOverlay() {
   return (
     <section className="overlay glass">
       <h2 className="overlay-title">Company Timeline World</h2>
-      <p className="overlay-sub">Navigate through Syncella's journey on floating islands.</p>
+      <p className="overlay-sub">Navigate through Syncella&apos;s journey on floating islands.</p>
 
       <div className="timeline">
         <div className="timeline-node">
