@@ -2,10 +2,8 @@
 import React, { Suspense } from "react";
 import { useProgress } from "@/components/ProgressProvider";
 
-// These imports require the user-installed deps; they are typed as any to avoid build breaks before installation
-// @ts-ignore
+// These imports require the user-installed deps
 import { Canvas } from "@react-three/fiber";
-// @ts-ignore
 import { OrbitControls, Stars, Environment } from "@react-three/drei";
 
 function Station() {

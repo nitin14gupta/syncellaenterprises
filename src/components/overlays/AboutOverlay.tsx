@@ -10,11 +10,11 @@ export default function AboutOverlay() {
       <div className="timeline">
         <div className="timeline-node">
           <div className="dot">2025</div>
-          <div className="label">Founded • Company Birth</div>
+          <div className="label">Founded &#8226; Company Birth</div>
         </div>
-        <div className="timeline-node"><div className="dot">Growth</div><div className="label">Phase 1 • Team Growth</div></div>
-        <div className="timeline-node"><div className="dot">Products</div><div className="label">Launch • Jilzo & Safarsaathi</div></div>
-        <div className="timeline-node"><div className="dot">Future</div><div className="label">Vision • R&D</div></div>
+        <div className="timeline-node"><div className="dot">Growth</div><div className="label">Phase 1 &#8226; Team Growth</div></div>
+        <div className="timeline-node"><div className="dot">Products</div><div className="label">Launch &#8226; Jilzo &amp; Safarsaathi</div></div>
+        <div className="timeline-node"><div className="dot">Future</div><div className="label">Vision &#8226; R&amp;D</div></div>
       </div>
 
       <div className="stats-grid">
