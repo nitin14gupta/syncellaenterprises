@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import PageTransition from "@/components/PageTransition";
+import CursorProvider from "@/components/cursor/CursorProvider";
+import ProgressProvider from "@/components/ProgressProvider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -75,8 +77,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${poppins.variable} antialiased`}>
-        {/* Page-level transitions */}
-        <PageTransition>{children}</PageTransition>
+        <ProgressProvider>
+          {/* Page-level transitions */}
+          <PageTransition>{children}</PageTransition>
+        </ProgressProvider>
+        {/* Custom cursor overlay */}
+        <CursorProvider skin="comet" color="#00BFFF" accent="#8A2BE2" size={16} />
       </body>
     </html>
   );
